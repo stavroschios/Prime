@@ -119,7 +119,7 @@ public class AllPrimes {
      */
 
     public static boolean isPrime(int n) {
-        if( n == 1) {
+        if( (number == 1) || (number == 0) ) {
             return false;
 
         }
