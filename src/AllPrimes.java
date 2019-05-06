@@ -160,25 +160,28 @@ public class AllPrimes {
      * @return Palindrome
      */
 
-    public static boolean isPalindrome(int n) {
+    public static boolean isPalindrome(int number) {
 
 
-        int rev = 0;
-        int d, palindrome;
-
-        palindrome = n;
-
-        while (n > 0 ) {
-            d = n % 10;
-            rev = (rev * 10) + d;
-            n /= 10;
-
+         int reverse = 0;
+        if(number < 0){
+            number *= -1;
         }
-        if ( palindrome == rev) {
+        int num = number;
+        while(num > 0) {
+            int lastdigit = num % 10;
+            reverse *= 10;
+            reverse += lastdigit;
+            num /= 10;
+        }
+        System.out.println("The reverse is >> " + reverse);
+        System.out.println("The palindrome number is >> " + number);
+        if(reverse == number) {
             return true;
         } else {
             return false;
         }
+    
     } // end isPalindrome
 
 
