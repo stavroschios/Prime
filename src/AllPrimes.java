@@ -174,8 +174,8 @@ public class AllPrimes {
             reverse += lastdigit;
             num /= 10;
         }
-        System.out.println("The reverse is >> " + reverse);
-        System.out.println("The palindrome number is >> " + number);
+       // System.out.println("The reverse is >> " + reverse);
+        // System.out.println("The palindrome number is >> " + number);
         if(reverse == number) {
             return true;
         } else {
